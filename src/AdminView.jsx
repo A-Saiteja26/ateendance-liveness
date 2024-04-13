@@ -17,7 +17,7 @@ function AdminView(){
     const checkJWT = async ()=>{
         try{
             const token = localStorage.getItem('token');
-            const resp = await axios.post("http://localhost:5994/myapp/admin/validatejwt",{token});
+            const resp = await axios.post("https://proj-live-backend.onrender.com/myapp/admin/validatejwt",{token});
             console.log(resp);
             return true;
         }
@@ -48,7 +48,7 @@ function AdminView(){
         getUsersList();
     },[]);
     const getUsersList = async()=>{
-        const response = await axios.get('http://localhost:5994/myapp/admin/get-members');
+        const response = await axios.get('https://proj-live-backend.onrender.com/myapp/admin/get-members');
         //console.log(response.data);
         setUserName(response.data);
         setCanRenderTable(true);

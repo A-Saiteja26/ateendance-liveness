@@ -45,7 +45,7 @@ const DeletePerson = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:5994/myapp/employee/delete_person',
+                'https://proj-live-backend.onrender.com/myapp/employee/delete_person',
                 {
                     photoData: imageData
                 },

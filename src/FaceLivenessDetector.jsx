@@ -17,7 +17,7 @@ export function LivenessQuickStartReact(){
   React.useEffect(() => {
     const fetchCreateLiveness = async () => {    
       
-      let res = await fetch('http://localhost:5994/myapp/api/');
+      let res = await fetch('https://proj-live-backend.onrender.com/myapp/api/');
       let json = await res.json();
       let sessionId = json?.sessionId;
 
@@ -40,7 +40,7 @@ export function LivenessQuickStartReact(){
     console.log("came here");
 
     const response = await fetch(
-      `http://localhost:5994/myapp/api/get?sessionId=${createLivenessApiData.sessionId}`
+      `https://proj-live-backend.onrender.com/myapp/api/get?sessionId=${createLivenessApiData.sessionId}`
     );
     const data = await response.json();
     console.log(data)
@@ -51,7 +51,7 @@ export function LivenessQuickStartReact(){
 
                try {
             const response = await axios.post(
-                'http://localhost:5994/myapp/employee/sample',
+                'https://proj-live-backend.onrender.com/myapp/employee/sample',
                 {
                      sessionId:createLivenessApiData.sessionId
                 },
@@ -64,7 +64,7 @@ export function LivenessQuickStartReact(){
             console.log(response.data);
             try {
               const resp = await axios.post(
-                  'http://localhost:5994/myapp/employee/mark_attendance',
+                  'https://proj-live-backend.onrender.com/myapp/employee/mark_attendance',
                   {
                        photoData:response.data 
                   },

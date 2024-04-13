@@ -20,7 +20,7 @@ function Base64ImageUpload() {
             reader.onload = async () => {
                 const base64Data = reader.result.split(',')[1]; // Extract base64 data
                 const response = await axios.post(
-                    'http://localhost:5994/myapp/register_request',
+                    'https://proj-live-backend.onrender.com/myapp/register_request',
                     {
                         userData: {
                             name: "sai teja"
