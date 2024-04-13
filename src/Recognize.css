@@ -1,0 +1,62 @@
+.body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(73deg, #115eb4, #1676e2, #1aa5c9);
+    /* You can adjust the gradient angle and colors as needed */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 191vh;
+}
+
+
+.container {
+    text-align: center;
+    /*background: linear-gradient(150deg, #115eb4, #1676e2, #1aa5c9);*/
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+    /*background: linear-gradient(180deg, #115eb4, #1676e2, #1aa5c9);
+    color:#f2f2f2;*/
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height:40px;
+    width : 400px /* Ensure the div takes up the full height */
+}
+h2{
+    text-align: center;
+    padding-right: 60px;
+    color:black;
+    padding: 0px;
+}
+
+.button {
+    background-color: blue;
+
+}
+.button:hover {
+    background-color: green;
+    
+}
+.photo {
+    border: 2px solid #333;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+#video{
+    border: 2px solid #333;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+}
