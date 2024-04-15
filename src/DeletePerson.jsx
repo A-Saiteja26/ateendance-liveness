@@ -90,8 +90,8 @@ const DeletePerson = () => {
                         <h2>Delete Person</h2>
                     </div>
 
-                    <video id="video" ref={videoRef} autoPlay></video>
-                    <button className="button" onClick={capturePhoto}>Take Photo</button>
+                    <video id="video" ref={videoRef} autoPlay></video><br/>
+                    <button className="btn" onClick={capturePhoto}>Take Photo</button>
                     <br />
                      
                     {/*<img id="photo" ref={photoRef} alt="click on take" className="photo" />*/}
@@ -103,7 +103,7 @@ const DeletePerson = () => {
                         display: photoData ? 'block' : 'none'
                     }}>
                         <input type="hidden" id="photoData" name="photoData" value={photoData} />
-                        <button className="button" type="submit">Delete Person</button>
+                        <button className="btn" type="submit">Delete Person</button>
                     </form>
                 </div>
             </div>

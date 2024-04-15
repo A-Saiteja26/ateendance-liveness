@@ -106,8 +106,8 @@ const Register = () => {
                     <h2>Register Here</h2>
                 </div>
                 
-                <video id="video" ref={videoRef} autoPlay></video>
-                <button className="button" onClick={capturePhoto}>Take Photo</button>
+                <video id="video" ref={videoRef} autoPlay></video><br/>
+                <button className='btn' onClick={capturePhoto}>Take Photo</button>
                 <br />
                 <img id="photo" ref={photoRef} alt="click on take" className="photo" style={{
                         display: photoData ? 'block' : 'none' 
@@ -121,10 +121,10 @@ const Register = () => {
                 {/*<img className="photo" ref={photoRef} alt="Captured Image" />*/}
                 <form id="submitForm" onSubmit={handleSubmit} style={{ display: photoData ? 'block' : 'none' }}>
                     <label htmlFor="name">Enter Name</label>
-                    <input type="text" id="userData" name="userData" ref={userDataInputRef} />
+                    <input type="text" id="userData" name="userData" placeholder="Enter Name" ref={userDataInputRef} />
                     
                     <input type="hidden" id="photoData" name="photoData" value={photoData} ref={photoDataInputRef} />
-                    <button className='button' type="submit">Submit Photo</button>
+                    <button className='btn' type="submit">Submit Photo</button>
                 </form>
             </div>
         </div>

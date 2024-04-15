@@ -134,11 +134,13 @@ export function LivenessQuickStartReact(){
       {
       isRecognized && 
       <div>
+        <br/>
     
       {/* <h1>{uname || "sample"} is recognized </h1> */}
       {
         isDarwin &&
-      <button onClick={handleViewAttendanceClick}>View Attendance</button>
+      
+      <button className='btn' style={{ display: 'block', margin: '0 auto' }} onClick={handleViewAttendanceClick}>View Attendance</button>
         }
       </div>}
       <ToastContainer />
